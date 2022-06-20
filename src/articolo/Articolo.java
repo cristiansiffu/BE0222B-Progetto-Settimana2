@@ -66,9 +66,9 @@ public class Articolo {
 	@Override
 	public String toString() {
 		String stringa = "";
-		stringa = "Titolo: " + this.titolo + "\n" + "Data: " + this.data + "\n" + "Categoria: " + this.categoria + "\n"
+		stringa = "*************************" + "\n" + "Titolo: " + this.titolo + "\n" + "Data: " + this.data + "\n" + "Categoria: " + this.categoria + "\n"
 				+ "Testo: " + this.testo + "\n" + "Autore: " + this.autore.getNome() + " " + this.autore.getCognome()
-				+ "\n" + "Tags: " + this.tags.toString() + "\n";
+				+ "\n" + "Tags: " + this.tags.toString() + "\n" + "*************************" + "\n";
 		return stringa;
 	}
 

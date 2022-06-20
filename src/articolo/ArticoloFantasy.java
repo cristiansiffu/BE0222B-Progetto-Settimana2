@@ -16,10 +16,10 @@ public class ArticoloFantasy extends Articolo {
 	@Override
 	public String toString() {
 		String stringa = "";
-		stringa = "Titolo: " + super.getTitolo() + "\n" + "Data: " + super.getData() + "\n" + "Categoria: "
+		stringa = "*************************" + "\n" + "Titolo: " + super.getTitolo() + "\n" + "Data: " + super.getData() + "\n" + "Categoria: "
 				+ super.getCategoria() + "\n" + "Descrizione: " + this.descrizione + "\n" + "Testo: " + super.getTesto()
 				+ "\n" + "Autore: " + super.getAutore().getNome() + " " + super.getAutore().getCognome() + "\n"
-				+ "Tags: " + super.getTags().toString() + "\n";
+				+ "Tags: " + super.getTags().toString() + "\n" + "*************************" + "\n";
 		return stringa;
 	}
 }

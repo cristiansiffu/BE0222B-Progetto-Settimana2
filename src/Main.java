@@ -7,6 +7,7 @@ import articolo.ArticoloNoir;
 import articolo.Autore;
 import articolo.BlogImp;
 import articolo.Tags;
+import articolo.interfacce.Blog;
 
 public class Main {
 
@@ -22,9 +23,13 @@ public class Main {
 
 		BlogImp blog = new BlogImp(new Articolo[] { articolo1, articolo2, articolo3, articolo4 });
 
-		Scanner scanner = new Scanner(System.in);
+		opzioneStampa(blog);
+	}
+
+	static void opzioneStampa(Blog blog) {
 		System.out.println("Opzioni di stampa: " + "\n" + "1 per stampare tutti gli articoli" + "\n"
-				+ "2 per stampare gli articoli in base all'ID selezionato");
+				+ "2 per stampare gli articoli in base all'ID selezionato" + "\n");
+		Scanner scanner = new Scanner(System.in);
 		int opzione = Integer.parseInt(scanner.nextLine());
 		if (opzione == 1) {
 			System.out.println("Articoli stampati correttamente" + "\n");
@@ -34,5 +39,6 @@ public class Main {
 			int opzionePerId = Integer.parseInt(scanner.nextLine());
 			blog.stampaArticoloPerId(opzionePerId);
 		}
+		opzioneStampa(blog);
 	}
 }
